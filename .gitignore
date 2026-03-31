@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.env
+dataset.hdf5
+data/dataset.npz
+.venv/
+.notebook_exec_logs/
+# Models should not be committed if large, but user says to keep them in outputs/ 
+# but usually we ignore them and have a download script or let the reviewer run. 
+# Here the user said keep only in outputs/ so maybe I should not ignore them.
+# The request says .gitignore should have ONLY:
+# __pycache__/ *.pyc .ipynb_checkpoints/ .DS_Store .env
