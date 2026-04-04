@@ -166,6 +166,8 @@ Learn robust representations without labels using self-supervised learning.
 3. **Representation learning improves downstream tasks** — contrastive pretraining provides +3% accuracy over supervised GNN
 4. **Augmentation choice matters** — physics-preserving augmentations (noise, crop) outperform generic image transforms
 
+**Graph-based modeling combined with representation learning provides a stronger approach for jet classification compared to standard CNN methods.**
+
 ---
 
 ## Repository Structure
