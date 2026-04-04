@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,f1,roc_auc
+CNN,0.658,0.66,0.65,0.65,0.715
+ResNet,0.682,0.69,0.68,0.68,0.745
+GNN,0.693,0.71,0.68,0.69,0.7833
+Contrastive,0.723,0.74,0.71,0.72,0.7924

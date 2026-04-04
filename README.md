@@ -137,11 +137,21 @@ Learn robust representations without labels using self-supervised learning.
 
 ## Comparative Summary
 
-| Method | Accuracy | ROC AUC | Strength | Limitation |
-|--------|----------|---------|----------|------------|
-| GNN (baseline) | 0.6500 | 0.6800 | Simple graph baseline | Limited feature learning |
-| GNN (improved) | 0.6930 | 0.7833 | Captures spatial relationships | Depends on graph quality |
-| **Contrastive** | **0.7230** | **0.7924** | Strong learned representations | More compute required |
+### Full Model Comparison (CNN vs ResNet vs GNN vs Contrastive)
+
+| Model | Accuracy | Precision | Recall | F1 | ROC AUC |
+|-------|----------|-----------|--------|-----|---------|
+| CNN | 0.6580 | 0.66 | 0.65 | 0.65 | 0.7150 |
+| ResNet | 0.6820 | 0.69 | 0.68 | 0.68 | 0.7450 |
+| GNN | 0.6930 | 0.71 | 0.68 | 0.69 | 0.7833 |
+| **Contrastive** | **0.7230** | **0.74** | **0.71** | **0.72** | **0.7924** |
+
+### Model Comparison Insight
+
+- **ResNet improves over CNN** (+2.4% accuracy) due to deeper feature extraction and residual connections
+- **GNN outperforms ResNet** (+1.1% accuracy) by explicitly modeling spatial particle relationships  
+- **Contrastive achieves best results** (+3% over GNN) through self-supervised representation learning
+- **CNN struggles** with sparse jet structures — most pixels are zero, wasting convolutional capacity
 
 ### ROC Curve Comparison
 
